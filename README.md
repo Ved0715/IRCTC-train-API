@@ -68,7 +68,7 @@ Follow these steps to set up and start the project:
     "success": true,
     "data": [],
     "message": "Trains Fetched Successfully"
-    }
+     }
      ```
 ![get Train](Images/searchTrain.png)
 
@@ -84,11 +84,11 @@ Follow these steps to set up and start the project:
         "source": "Bangalore",
         "destination": "Mumbai",
         "totalSeats": 340
-    } 
+     } 
      ``` 
    - **Response:**
      ```json
-    {
+     {
         "success": true,
         "data": {
             "id": 3,
@@ -98,7 +98,7 @@ Follow these steps to set up and start the project:
             "totalSeats": 340
          },
         "message": "Train Added Successfully"
-    }
+     }
      ```
 ![Add Train](Images/addTrain.png)
 
@@ -109,7 +109,7 @@ Follow these steps to set up and start the project:
    - **Description:** Fetches booking details of a user.
    - **Response:**
      ```json
-    {
+     {
         "success": true,
         "data": [
             {
@@ -126,7 +126,7 @@ Follow these steps to set up and start the project:
             }
         ],
         "message": "Bookings Fetched Successfully"
-    }
+     }
      ```
 ![Bookings ](Images/bookings.png)
 
@@ -137,13 +137,13 @@ Follow these steps to set up and start the project:
    - **Description:** Books a train for a user.
    - **Request Body:**
      ```json
-    {
+     {
         "trainId": 2
-    }
+     }
      ```
    - **Response:**
      ```json
-    {
+     {
       "success": true,
       "data": {
         "id": 2,
@@ -152,7 +152,7 @@ Follow these steps to set up and start the project:
         "createdAt": "2025-05-28T10:09:41.584Z"
       },
       "message": "Seat Booked Successfully"
-    } 
+     } 
      ```
 ![Book ](Images/book.png)
 
@@ -163,18 +163,18 @@ Follow these steps to set up and start the project:
    - **Description:** Logs in a user.
    - **Request Body:**
      ```json
-     {
+      {
        "email": "user@example.com",
        "password": "password123"
-     }
+      }
      ```
    - **Response:**
      ```json
-    {
+     {
         "success": true,
         "token": "nldnva...",
         "message": "Login Successfully"
-    }
+     }
      ```
 ![Login](Images/login.png)
 
