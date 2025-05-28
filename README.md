@@ -16,7 +16,7 @@ Follow these steps to set up and start the project:
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Ved0715/IRCTC-train-API.git
    ```
 
 2. Install dependencies:
@@ -70,7 +70,7 @@ Follow these steps to set up and start the project:
     "message": "Trains Fetched Successfully"
     }
      ```
-
+![get Train](Images/searchTrain.png)
 
 
 #### 2. **Add a New Train**
@@ -80,30 +80,27 @@ Follow these steps to set up and start the project:
    - **Request Body:**
      ```json
      {
-    "name": "Rajdhani Express 2",
-    "source": "Bangalore",
-    "destination": "Mumbai",
-    "totalSeats": 340
+        "name": "Rajdhani Express 2",
+        "source": "Bangalore",
+        "destination": "Mumbai",
+        "totalSeats": 340
     } 
-
-     ```
+     ``` 
    - **Response:**
      ```json
     {
-  "success": true,
-  "data": {
-    "id": 3,
-    "name": "Rajdhani Express 2",
-    "source": "Bangalore",
-    "destination": "Mumbai",
-    "totalSeats": 340
-  },
-  "message": "Train Added Successfully"
+        "success": true,
+        "data": {
+            "id": 3,
+            "name": "Rajdhani Express 2",
+            "source": "Bangalore",
+            "destination": "Mumbai",
+            "totalSeats": 340
+         },
+        "message": "Train Added Successfully"
     }
      ```
-
-
-
+![Add Train](Images/addTrain.png)
 
 
 #### 3. **Get User Bookings**
@@ -113,24 +110,26 @@ Follow these steps to set up and start the project:
    - **Response:**
      ```json
     {
-  "success": true,
-  "data": [
-    {
-      "id": 1,
-      "userId": 2,
-      "trainId": 1,
-      "createdAt": "2025-05-28T10:07:43.352Z"
-    },
-    {
-      "id": 2,
-      "userId": 2,
-      "trainId": 2,
-      "createdAt": "2025-05-28T10:09:41.584Z"
-    }
-  ],
-  "message": "Bookings Fetched Successfully"
+        "success": true,
+        "data": [
+            {
+                "id": 1,
+                "userId": 2,
+                "trainId": 1,
+                "createdAt": "2025-05-28T10:07:43.352Z"
+            },
+            {
+              "id": 2,
+              "userId": 2,
+              "trainId": 2,
+              "createdAt": "2025-05-28T10:09:41.584Z"
+            }
+        ],
+        "message": "Bookings Fetched Successfully"
     }
      ```
+![Bookings ](Images/bookings.png)
+
 
 #### 4. **Book a Train**
    - **Endpoint:** `/user/book`
@@ -139,22 +138,24 @@ Follow these steps to set up and start the project:
    - **Request Body:**
      ```json
     {
-  "trainId": 2
+        "trainId": 2
     }
      ```
    - **Response:**
      ```json
     {
-  "success": true,
-  "data": {
-    "id": 2,
-    "userId": 2,
-    "trainId": 2,
-    "createdAt": "2025-05-28T10:09:41.584Z"
-  },
-  "message": "Seat Booked Successfully"
+      "success": true,
+      "data": {
+        "id": 2,
+        "userId": 2,
+        "trainId": 2,
+        "createdAt": "2025-05-28T10:09:41.584Z"
+      },
+      "message": "Seat Booked Successfully"
     } 
      ```
+![Book ](Images/book.png)
+
 
 #### 5. **Login**
    - **Endpoint:** `/auth/login`
@@ -170,32 +171,20 @@ Follow these steps to set up and start the project:
    - **Response:**
      ```json
     {
-  "success": true,
-  "token": "nldnva...",
-  "message": "Login Successfully"
+        "success": true,
+        "token": "nldnva...",
+        "message": "Login Successfully"
     }
      ```
+![Login](Images/login.png)
+
 
 #### 6. **Register**
    - **Endpoint:** `/auth/register`
    - **Method:** `POST`
    - **Description:** Registers a new user.
-   - **Request Body:**
-     ```json
-     {
-       "name": "John Doe",
-       "email": "user@example.com",
-       "password": "password123"
-     }
-     ```
-   - **Response:**
-     ```json
-     {
-       "message": "Registration successful",
-       "userId": "456"
-     }
-     ```
 
+![Regster](Images/register.png)
 
 
 
